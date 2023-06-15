@@ -41,9 +41,63 @@
         <input type="reset" value="Limpar">
         </p>
 
-
       </fieldset>
+        
+            <fieldset>
+              <p>
+                <label for="icor"></label>
+                 <input type="color" name="cor" id="icor">
+              </p>
 
+
+                <p>
+                  <label for="ifoto"></label>
+                  <input type="file" name="foto" id="ifoto">
+                </p>
+
+                <p>
+                  <label for="inivel">Nivel de satisfação</label>
+                  <input type="range" name="nivel" id="inivel">
+                </p>
+
+                <p>
+                 <label for="iest"></label>
+                 <select name="Estado" id="iest">
+                  
+                  <option value="" selected>---Escolha---</option>
+                  <optgroup label="Região Sudeste">
+                  <option value="MG">Minas Gerais</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="São Paulo">São Paulo</option>
+                  </optgroup>
+                  <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio grande do Norte</option>
+
+                  </optgroup>
+                 </select>
+                </p>
+
+                  <p>
+                    <label for="">Profissão</label>
+                    <input type="text" name="prof" id="iprof" list="list">
+                    <datalist id="list">
+                      <option value="ADM">Administradaor</option>
+                      <option value="CONT">Contabilista</option>
+                      <option value="dev">Desenvolvedor</option>
+                      <option value="PROF">Professor</option>
+                    </datalist>
+                  </p>
+
+                  <P>
+                    <label for="imsg">Menssagem</label>
+                    <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+                  </P>
+
+            </fieldset>
+          
+      
   </form>
 </body>
 </html>
