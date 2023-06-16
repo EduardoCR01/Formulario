@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php">
+
+        <fieldset>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            
+            <p>
+                <label for="isenha">Senha</label>
+                <input type="password" name="senha" id="isenha">
+            </p>
+            <p>
+                <label for="imonth">Mês</label>
+                <input type="month" name="month" id="imonth">
+            </p>
+            <p>
+                <label for="idate">Data</label>
+                <input type="date" name="date" id="idate">
+            </p>
+        </fieldset>
+
+            <fieldset>
+                <p>
+                    <label for="isexom">Masculino</label>
+                    <input type="radio" name="sexo" id="isexom">
+                </p>
+                <p>
+                    <label for="isexof">Feminino</label>
+                    <input type="radio" name="sexo" id="isexof">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+                <p>
+                    <label for="iesbas">Basquete</label>
+                    <input type="checkbox" name="esbas" id="iesbas">
+                </p>
+                <p>
+                    <label for="iesfut">Futebol</label>
+                    <input type="checkbox" name="esfut" id="iesfut">
+                </p>
+                <p>
+                    <label for="iesnat">Natação</label>
+                    <input type="checkbox" name="esnat" id="iesnat">
+                </p>
+                
+                <p>
+                    <label for="iesten">Tênis</label>
+                    <input type="checkbox" name="esten" id="iesten">
+                </p>
+
+                <p><input type="submit" value="Enviar"></p>
+                <p><input type="reset" value="Limpar"></p>
+
+            </fieldset>
+
+
+                <p><label for="icor">Cor</label>
+                    <input type="color" name="cor" id="icor">
+                </p>
+                
+               <p><label for="ifoto"></label>
+                    <input type="file" name="foto" id="ifoto">
+               </p>
+
+               <p><label for="inivel">Nivel de satisfação</label>
+                    <input type="range" name="nivel" id="inivel">
+                </p>
+               
+
+                <p>
+                    <select name="estado" id="iest">
+                        <option value="" selected>---Escolha---</option>
+                        <optgroup label="Região Sudeste">
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+                        <optgroup label="Região Nordeste">
+                            <option value="PN">Pernambuco</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="RG">Rio Grande do Norte</option>
+                        </optgroup>
+                </p>
+                </select>
+<p>
+                    <label for="iprof">Profissão</label>
+                    <input type="text" name="prof" id="iprof" list="list">
+                    <datalist id="list">
+                        <option value="ADM">Administrador</option>
+                        <option value="CONT">Contabilista</option>
+                        <option value="DEV">Desenvolvedor</option>
+                        <option value="Professor">Professor</option>
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="itext">Mensagem</label> <br>
+                    <textarea name="mensagem" id="itext" cols="30" rows="10"></textarea>
+                </p>
+
+    </form>
+
+</body>
+</html>
